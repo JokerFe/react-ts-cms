@@ -107,7 +107,9 @@ const webpackBaseConfig = {
     }),
     new CleanWebpackPlugin(),
     new WebpackBar(),
-    new Dotenv(),
+    new Dotenv({
+      path: resolve(__dirname, `.env.${_mode}`),
+    }),
   ],
 };
 
