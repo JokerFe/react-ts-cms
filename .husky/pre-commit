@@ -1,0 +1,11 @@
+###
+ # @Author: 崔浩然
+ # @Email：cuihaoran@hualala.com
+ # @Date: 2022-08-15 09:31:57
+ # @Description: 页面/组件/功能的描述
+ # @FilePath: /hr-react-web/.husky/pre-commit
+###
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run lint
