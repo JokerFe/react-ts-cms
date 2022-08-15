@@ -1,3 +1,10 @@
+/*
+ * @Author: 崔浩然
+ * @Email：cuihaoran@hualala.com
+ * @Date: 2022-08-02 10:30:06
+ * @Description: 页面/组件/功能的描述
+ * @FilePath: /hr-react-web/config/webpack.production.js
+ */
 const TerserPlugin = require('terser-webpack-plugin');
 const os = require('os');
 const { join, resolve } = require('path');
@@ -36,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '京程一灯yd-react-generator',
+      title: 'hr-react-generator',
       filename: 'index.html',
       template: resolve(__dirname, '../src/index-prod.html'),
     }),
